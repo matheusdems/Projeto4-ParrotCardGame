@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrot Card Game</title>
+    <link rel="stylesheet" href="./Estilos/reset.css" />
+    <link rel="stylesheet" href="./Estilos/style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>PARROT CARD GAME</h1>
+    </header>
+
+    <div class="principal-jogo">
+        <div class="card">
+            <img src="./Arquivos-Projeto04/front.png" alt="">
+        </div>
+
+        <div class="card">
+            <img src="./Arquivos-Projeto04/front.png" alt="">
+        </div>
+
+        <div class="card">
+            <img src="./Arquivos-Projeto04/front.png" alt="">
+        </div>
+
+        <div class="card">
+            <img src="./Arquivos-Projeto04/front.png" alt="">
+        </div>
+
+        <div class="card">
+            <img src="./Arquivos-Projeto04/front.png" alt="">
+        </div>
+
+        <div class="card">
+            <img src="./Arquivos-Projeto04/front.png" alt="">
+        </div>
+    </div>
+
+    
+    
+    
+</body>
+<script>
+const numeroCartas = prompt('entre com o número de cartas?');
+let numeroAleatorio = Math.floor(Math.random() * numeroCartas/2 + 1);
+let listaAleatoria = [];
+listaAleatoria[0] = numeroAleatorio;
+
+indice = 1;
+
+while (indice<numeroCartas){
+    numeroAleatorio = Math.floor(Math.random() * numeroCartas/2 + 1);
+    if(listaAleatoria.indexOf(numeroAleatorio) === -1){
+        listaAleatoria.push(numeroAleatorio);
+    }
+
+    indice++;
+}
+
+</Script>
+
+</html>
